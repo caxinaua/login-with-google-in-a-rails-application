@@ -1,0 +1,7 @@
+<div style='text-align: right' >
+  <% if current_user %>
+    Hello, <%= current_user.name %>!
+  <% else %>
+    <%= link_to 'Login with google', g_url_in %>
+  <% end %>
+</div>
