@@ -1,6 +1,9 @@
-<div style='text-align: right' >
+<div style='text-align: right'>
   <% if current_user %>
     Hello, <%= current_user.name %>!
+    <%= link_to 'all users', users_path %>
+    <%= link_to 'Exit', exit_path %>
+    <%= image_tag current_user.picture, style: "border-radius: 48px; width: 48px; vertical-align:middle" %>
   <% else %>
     <%= link_to 'Login with google', g_url_in %>
   <% end %>

@@ -21,4 +21,9 @@ class GoogleLoginController < ApplicationController
     session[:user] = user.id
     redirect_to user
   end
+
+  def sign_out
+    session.clear
+    redirect_to root_path
+  end
 end
