@@ -1,24 +1,29 @@
-# README
+# Login with google in a rails app with a gem login\_with\_google
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Set yours environment variables
 
-Things you may want to cover:
+	export G_CLIENT_ID='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com'
+	export G_CLIENT_SECRET='xxxxxxxxxxxxxxxxxxxxxx-G'
+	export G_REDIRECT_URI='http://localhost:3000/callback'
 
-* Ruby version
+Run migrations
 
-* System dependencies
+	rake db:migrate
 
-* Configuration
+Start app
 
-* Database creation
+	rails s
 
-* Database initialization
+## Screen Shots
 
-* How to run the test suite
+Root page
 
-* Services (job queues, cache servers, search engines, etc.)
+![Root page](https://live.staticflickr.com/65535/50497650803_5a5575199e_o_d.png)
 
-* Deployment instructions
+Login
 
-* ...
+![Login](https://live.staticflickr.com/65535/50498364316_fc033c9589_o_d.png)
+
+See data user logged
+
+![](https://live.staticflickr.com/65535/50497651763_b5156e4488_o_d.png)
